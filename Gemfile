@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 ruby '>= 2.7.0', '< 3.3.0'
 
 gem 'pkg-config', '~> 1.5'
-gem 'rexml', '~> 3.2'
+gem 'rexml', '~> 3.2', '>= 3.2.7'
 
 gem 'puma', '~> 6.1'
 gem 'rails', '~> 6.1.7'
@@ -39,7 +39,7 @@ end
 
 gem 'net-ldap', '~> 0.17'
 gem 'omniauth-cas', '~> 2.0'
-gem 'omniauth-saml', '~> 1.10'
+gem 'omniauth-saml', '~> 2.0', '>= 2.0.0'
 gem 'omniauth_openid_connect', '~> 0.6.0'
 gem 'omniauth', '~> 1.9'
 gem 'omniauth-rails_csrf_protection', '~> 0.1'
@@ -107,10 +107,10 @@ group :development, :test do
   gem 'pry-byebug', '~> 3.10'
   gem 'pry-rails', '~> 0.3'
   gem 'rspec-rails', '~> 5.1'
-  gem 'rubocop-performance', require: false
-  gem 'rubocop-rails', require: false
-  gem 'rubocop-rspec', require: false
-  gem 'rubocop', require: false
+  gem 'rubocop-performance', '>= 1.17.0', require: false
+  gem 'rubocop-rails', '>= 2.18.0', require: false
+  gem 'rubocop-rspec', '>= 2.19.0', require: false
+  gem 'rubocop', '>= 1.46.0', require: false
 end
 
 group :production, :test do
@@ -127,7 +127,7 @@ group :test do
   gem 'rspec_junit_formatter', '~> 0.6'
   gem 'rspec-sidekiq', '~> 3.1'
   gem 'simplecov', '~> 0.22', require: false
-  gem 'webmock', '~> 3.18'
+  gem 'webmock', '~> 3.19', '>= 3.19.0'
 end
 
 group :development do
@@ -137,7 +137,7 @@ group :development do
   gem 'binding_of_caller', '~> 1.0'
   gem 'bullet', '~> 7.0'
   gem 'letter_opener', '~> 1.8'
-  gem 'letter_opener_web', '~> 2.0'
+  gem 'letter_opener_web', '~> 3.0', '>= 3.0.0'
   gem 'memory_profiler'
   gem 'brakeman', '~> 5.4', require: false
   gem 'bundler-audit', '~> 0.9', require: false
