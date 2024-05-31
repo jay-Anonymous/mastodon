@@ -7,7 +7,7 @@ gem 'pkg-config', '~> 1.5'
 gem 'rexml', '~> 3.2'
 
 gem 'puma', '~> 6.1'
-gem 'rails', '~> 6.1.7'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.3'
 gem 'sprockets', '~> 3.7.2'
 gem 'thor', '~> 1.2'
 gem 'rack', '~> 2.2.6'
@@ -16,7 +16,7 @@ gem 'haml-rails', '~>2.0'
 gem 'pg', '~> 1.4'
 gem 'makara', '~> 0.5'
 gem 'pghero'
-gem 'dotenv-rails', '~> 2.8'
+gem 'dotenv-rails', '~> 3.0', '>= 3.0.0'
 
 gem 'aws-sdk-s3', '~> 1.119', require: false
 gem 'fog-core', '<= 2.4.0'
@@ -24,29 +24,29 @@ gem 'fog-openstack', '~> 0.3', require: false
 gem 'kt-paperclip', '~> 7.1', github: 'kreeti/kt-paperclip', ref: '11abf222dc31bff71160a1d138b445214f434b2b'
 gem 'blurhash', '~> 0.1'
 
-gem 'active_model_serializers', '~> 0.10'
+gem 'active_model_serializers', '~> 0.10', '>= 0.10.14'
 gem 'addressable', '~> 2.8'
 gem 'bootsnap', '~> 1.16.0', require: false
 gem 'browser'
 gem 'charlock_holmes', '~> 0.7.7'
 gem 'chewy', '~> 7.2'
-gem 'devise', '~> 4.9'
-gem 'devise-two-factor', '~> 4.0'
+gem 'devise', '~> 4.9', '>= 4.9.1'
+gem 'devise-two-factor', '~> 4.1', '>= 4.1.0'
 
 group :pam_authentication, optional: true do
   gem 'devise_pam_authenticatable2', '~> 9.2'
 end
 
 gem 'net-ldap', '~> 0.17'
-gem 'omniauth-cas', '~> 2.0'
-gem 'omniauth-saml', '~> 1.10'
+gem 'omniauth-cas', '~> 3.0', '>= 3.0.0'
+gem 'omniauth-saml', '~> 2.0', '>= 2.0.0'
 gem 'omniauth_openid_connect', '~> 0.6.0'
 gem 'omniauth', '~> 1.9'
-gem 'omniauth-rails_csrf_protection', '~> 0.1'
+gem 'omniauth-rails_csrf_protection', '~> 1.0', '>= 1.0.0'
 
 gem 'color_diff', '~> 0.1'
 gem 'discard', '~> 1.2'
-gem 'doorkeeper', '~> 5.6'
+gem 'doorkeeper', '~> 5.6', '>= 5.6.5'
 gem 'ed25519', '~> 1.3'
 gem 'fast_blank', '~> 1.0'
 gem 'fastimage'
@@ -60,7 +60,7 @@ gem 'idn-ruby', require: 'idn'
 gem 'kaminari', '~> 1.2'
 gem 'link_header', '~> 0.0'
 gem 'mime-types', '~> 3.4.1', require: 'mime/types/columnar'
-gem 'nokogiri', '~> 1.14'
+gem 'nokogiri', '~> 1.16', '>= 1.16.5'
 gem 'nsa', '~> 0.2'
 gem 'oj', '~> 3.14'
 gem 'ox', '~> 2.14'
@@ -71,21 +71,21 @@ gem 'pundit', '~> 2.3'
 gem 'premailer-rails'
 gem 'rack-attack', '~> 6.6'
 gem 'rack-cors', '~> 1.1', require: 'rack/cors'
-gem 'rails-i18n', '~> 6.0'
+gem 'rails-i18n', '~> 7.0', '>= 7.0.1'
 gem 'rails-settings-cached', '~> 0.6', git: 'https://github.com/mastodon/rails-settings-cached.git', branch: 'v0.6.6-aliases-true'
 gem 'redcarpet', '~> 3.6'
 gem 'redis', '~> 4.5', require: ['redis', 'redis/connection/hiredis']
 gem 'mario-redis-lock', '~> 1.2', require: 'redis_lock'
 gem 'rqrcode', '~> 2.1'
 gem 'ruby-progressbar', '~> 1.11'
-gem 'sanitize', '~> 6.0'
-gem 'scenic', '~> 1.7'
+gem 'sanitize', '~> 6.0', '>= 6.0.2'
+gem 'scenic', '~> 1.8', '>= 1.8.0'
 gem 'sidekiq', '~> 6.5'
 gem 'sidekiq-scheduler', '~> 5.0'
 gem 'sidekiq-unique-jobs', '~> 7.1'
 gem 'sidekiq-bulk', '~> 0.2.0'
 gem 'simple-navigation', '~> 4.4'
-gem 'simple_form', '~> 5.2'
+gem 'simple_form', '~> 5.3', '>= 5.3.0'
 gem 'sprockets-rails', '~> 3.4', require: 'sprockets/railtie'
 gem 'stoplight', '~> 3.0.1'
 gem 'strong_migrations', '~> 0.7'
@@ -103,10 +103,10 @@ gem 'rdf-normalize', '~> 0.5'
 group :development, :test do
   gem 'fabrication', '~> 2.30'
   gem 'fuubar', '~> 2.5'
-  gem 'i18n-tasks', '~> 1.0', require: false
+  gem 'i18n-tasks', '~> 1.0', '>= 1.0.13', require: false
   gem 'pry-byebug', '~> 3.10'
   gem 'pry-rails', '~> 0.3'
-  gem 'rspec-rails', '~> 5.1'
+  gem 'rspec-rails', '~> 6.0', '>= 6.0.0'
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
@@ -118,7 +118,7 @@ group :production, :test do
 end
 
 group :test do
-  gem 'capybara', '~> 3.38'
+  gem 'capybara', '~> 3.39', '>= 3.39.0'
   gem 'climate_control', '~> 0.2'
   gem 'faker', '~> 3.1'
   gem 'json-schema', '~> 3.0'
@@ -137,7 +137,7 @@ group :development do
   gem 'binding_of_caller', '~> 1.0'
   gem 'bullet', '~> 7.0'
   gem 'letter_opener', '~> 1.8'
-  gem 'letter_opener_web', '~> 2.0'
+  gem 'letter_opener_web', '~> 3.0', '>= 3.0.0'
   gem 'memory_profiler'
   gem 'brakeman', '~> 5.4', require: false
   gem 'bundler-audit', '~> 0.9', require: false
@@ -151,7 +151,7 @@ group :development do
 end
 
 group :production do
-  gem 'lograge', '~> 0.12'
+  gem 'lograge', '~> 0.13', '>= 0.13.0'
 end
 
 gem 'concurrent-ruby', require: false
