@@ -7,10 +7,10 @@ gem 'pkg-config', '~> 1.5'
 gem 'rexml', '~> 3.2'
 
 gem 'puma', '~> 6.1'
-gem 'rails', '~> 6.1.7'
+gem 'rails', '~> 7.0.0'
 gem 'sprockets', '~> 3.7.2'
 gem 'thor', '~> 1.2'
-gem 'rack', '~> 2.2.6'
+gem 'rack', '~> 2.2.11'
 
 gem 'haml-rails', '~>2.0'
 gem 'pg', '~> 1.4'
@@ -107,8 +107,8 @@ group :development, :test do
   gem 'pry-byebug', '~> 3.10'
   gem 'pry-rails', '~> 0.3'
   gem 'rspec-rails', '~> 5.1'
-  gem 'rubocop-performance', require: false
-  gem 'rubocop-rails', require: false
+  gem 'rubocop-performance', '>= 1.24.0', require: false
+  gem 'rubocop-rails', '>= 2.30.0', require: false
   gem 'rubocop-rspec', require: false
   gem 'rubocop', require: false
 end
