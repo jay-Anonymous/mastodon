@@ -7,10 +7,10 @@ gem 'pkg-config', '~> 1.5'
 gem 'rexml', '~> 3.2'
 
 gem 'puma', '~> 6.1'
-gem 'rails', '~> 6.1.7'
+gem 'rails', '~> 7.0.0'
 gem 'sprockets', '~> 3.7.2'
 gem 'thor', '~> 1.2'
-gem 'rack', '~> 2.2.6'
+gem 'rack', '~> 2.2.13'
 
 gem 'haml-rails', '~>2.0'
 gem 'pg', '~> 1.4'
