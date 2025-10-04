@@ -12,7 +12,7 @@ gem 'sprockets', '~> 3.7.2'
 gem 'thor', '~> 1.2'
 gem 'rack', '~> 2.2.6'
 
-gem 'haml-rails', '~>2.0'
+gem 'haml-rails', '~> 3.0', '>= 3.0.0'
 gem 'pg', '~> 1.4'
 gem 'makara', '~> 0.5'
 gem 'pghero'
@@ -107,10 +107,10 @@ group :development, :test do
   gem 'pry-byebug', '~> 3.10'
   gem 'pry-rails', '~> 0.3'
   gem 'rspec-rails', '~> 5.1'
-  gem 'rubocop-performance', require: false
-  gem 'rubocop-rails', require: false
-  gem 'rubocop-rspec', require: false
-  gem 'rubocop', require: false
+  gem 'rubocop-performance', '>= 1.17.0', require: false
+  gem 'rubocop-rails', '>= 2.18.0', require: false
+  gem 'rubocop-rspec', '>= 2.19.0', require: false
+  gem 'rubocop', '>= 1.66.0', require: false
 end
 
 group :production, :test do
